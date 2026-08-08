@@ -2,7 +2,7 @@ import portrait from "@/assets/sahil-portrait.jpg.asset.json";
 
 const STATS = [
   { value: "6+", label: "Years Experience" },
-  { value: "8", label: "Writers Managed" },
+  { value: "10+", label: "Writers Managed" },
   { value: "3", label: "Promotions Earned" },
   { value: "Forbes", label: "Guest Published" },
 ];
