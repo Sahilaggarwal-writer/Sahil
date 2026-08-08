@@ -37,7 +37,7 @@ export function Publications() {
     <section id="publications" className="py-24">
       <div className="mx-auto max-w-5xl px-6">
         <div className="mb-12 flex items-end justify-between">
-          <h2 className="label-caps text-muted-foreground">Featured Bylines</h2>
+          <h2 className="label-caps text-muted-foreground">GUEST PUBLISHINGS</h2>
           <div className="mx-8 mb-1.5 h-px flex-1 bg-border" />
         </div>
         <div className="grid grid-cols-1 gap-x-12 gap-y-16 md:grid-cols-2">

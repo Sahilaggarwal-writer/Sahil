@@ -15,7 +15,7 @@ export function About() {
             <p className="max-w-[40ch] leading-relaxed text-pretty text-bone/70">
               A journalism graduate turned technical content strategist, with 6+ years across The
               NineHertz, Emizen Tech, Zucol, and India&apos;s largest Hindi dailies. I treat
-              technical content as journalism — researched, structured, and accountable to the
+              technical content as journalism - researched, structured, and accountable to the
               reader.
             </p>
             <p className="max-w-[40ch] leading-relaxed text-pretty text-bone/70">

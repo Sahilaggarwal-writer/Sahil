@@ -69,7 +69,7 @@ export function ContactFooter() {
             © 2026 Sahil Aggarwal
           </p>
           <p className="text-[10px] tracking-widest uppercase italic text-muted-foreground">
-            Crafted for Precision
+            {"\n"}
           </p>
         </div>
       </div>
