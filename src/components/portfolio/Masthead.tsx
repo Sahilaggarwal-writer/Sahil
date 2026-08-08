@@ -3,7 +3,7 @@ export function Masthead() {
     <header className="border-b border-border">
       <div className="mx-auto flex max-w-5xl items-end justify-between px-6 py-8">
         <div className="space-y-1">
-          <p className="label-caps text-muted-foreground">Portfolio / 2026</p>
+          <p className="label-caps text-muted-foreground">{"\n"}</p>
           <p className="text-xl font-medium tracking-tight">Sahil Aggarwal</p>
         </div>
         <nav className="hidden gap-8 text-sm font-medium text-muted-foreground md:flex">
