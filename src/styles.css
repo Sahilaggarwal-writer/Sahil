@@ -114,3 +114,50 @@
 @utility reveal {
   animation: reveal-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
+
+/* Fine editorial paper grain + hairline grid, drawn purely with gradients */
+@utility paper-grain {
+  background-image:
+    radial-gradient(oklch(0.216 0.006 285.9 / 4%) 0.6px, transparent 0.6px),
+    radial-gradient(oklch(0.216 0.006 285.9 / 3%) 0.6px, transparent 0.6px);
+  background-position:
+    0 0,
+    9px 9px;
+  background-size: 18px 18px;
+}
+
+@utility hairline-grid {
+  background-image:
+    linear-gradient(to right, var(--color-border) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--color-border) 1px, transparent 1px);
+  background-size: 72px 72px;
+}
+
+@utility rule-gold {
+  background-image: linear-gradient(
+    to right,
+    var(--color-gold),
+    oklch(0.643 0.062 82.5 / 0%)
+  );
+}
+
+@utility index-num {
+  font-family: var(--font-serif);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: var(--color-gold);
+}
+
+@keyframes marquee-x {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@utility marquee-track {
+  animation: marquee-x 32s linear infinite;
+}
+
