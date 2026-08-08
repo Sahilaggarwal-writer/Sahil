@@ -39,7 +39,7 @@ export function ContactFooter() {
               <ul className="space-y-2 text-sm">
                 <li>
                   <a
-                    href="https://www.linkedin.com/in/sahilaggarwal-129001226"
+                    href="https://www.linkedin.com/in/sahil-aggarwal-129001226/"
                     target="_blank"
                     rel="noreferrer"
                     className="transition-colors hover:text-gold"
