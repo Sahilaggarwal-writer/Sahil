@@ -36,7 +36,7 @@ const OUTLETS = ["Forbes", "Business of Apps", "Hindustan Times", "The NineHertz
 
 export function Publications() {
   return (
-    <section id="publications" className="py-24">
+    <section id="publications" className="pt-24">
       <div className="mx-auto max-w-5xl px-6">
         <div className="mb-12 flex items-end justify-between">
           <h2 className="label-caps text-muted-foreground">GUEST PUBLISHINGS</h2>
