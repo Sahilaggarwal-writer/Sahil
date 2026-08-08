@@ -24,7 +24,7 @@ export function About() {
               page and gets cited inside AI answer engines.
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-8">
+          <div className="grid grid-cols-2 content-start gap-8">
             {STATS.map((stat) => (
               <div key={stat.label}>
                 <span className="mb-1 block font-serif text-2xl text-gold">{stat.value}</span>
