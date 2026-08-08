@@ -33,6 +33,7 @@ function Index() {
       <Masthead />
       <main>
         <Hero />
+        <Metrics />
         <About />
         <Journey />
         <Expertise />
