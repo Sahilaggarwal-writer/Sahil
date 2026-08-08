@@ -19,7 +19,6 @@ export function Hero() {
           />
           <div className="h-px flex-1 rule-gold" />
           <span className="text-[10px] tracking-widest uppercase text-muted-foreground">
-            Est. 2019 — Jaipur
           </span>
         </div>
         <h1 className="reveal mb-12 font-serif text-6xl leading-none text-balance md:text-8xl">
