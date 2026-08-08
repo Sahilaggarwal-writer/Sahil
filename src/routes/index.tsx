@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 
 import { Masthead } from "@/components/portfolio/Masthead";
 import { Hero } from "@/components/portfolio/Hero";
+import { Metrics } from "@/components/portfolio/Metrics";
 import { About } from "@/components/portfolio/About";
 import { Journey } from "@/components/portfolio/Journey";
 import { Expertise } from "@/components/portfolio/Expertise";
