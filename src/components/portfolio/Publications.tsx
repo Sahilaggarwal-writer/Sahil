@@ -32,17 +32,22 @@ const CLIENTS = [
   "Neo Thermal Insulation",
 ];
 
+const OUTLETS = ["Forbes", "Business of Apps", "Hindustan Times", "The NineHertz", "Emizen Tech"];
+
 export function Publications() {
   return (
     <section id="publications" className="py-24">
       <div className="mx-auto max-w-5xl px-6">
         <div className="mb-12 flex items-end justify-between">
           <h2 className="label-caps text-muted-foreground">GUEST PUBLISHINGS</h2>
-          <div className="mx-8 mb-1.5 h-px flex-1 bg-border" />
+          <div className="mx-8 mb-1.5 h-px flex-1 rule-gold" />
         </div>
         <div className="grid grid-cols-1 gap-x-12 gap-y-16 md:grid-cols-2">
-          {ARTICLES.map((article) => (
-            <article key={article.title} className="group">
+          {ARTICLES.map((article, i) => (
+            <article key={article.title} className="group relative pl-10">
+              <span className="index-num absolute top-1 left-0">
+                {String(i + 1).padStart(2, "0")}
+              </span>
               <div className="mb-3 text-[10px] font-medium tracking-widest uppercase text-gold">
                 {article.outlet}
               </div>
@@ -63,6 +68,21 @@ export function Publications() {
           </ul>
         </div>
       </div>
+
+      <div className="mt-20 overflow-hidden border-y border-border py-5">
+        <div className="marquee-track flex w-max gap-12 whitespace-nowrap">
+          {[...OUTLETS, ...OUTLETS, ...OUTLETS, ...OUTLETS].map((outlet, i) => (
+            <span
+              key={`${outlet}-${i}`}
+              className="flex items-center gap-12 font-serif text-2xl text-foreground/25"
+            >
+              {outlet}
+              <span className="text-gold/50">◆</span>
+            </span>
+          ))}
+        </div>
+      </div>
     </section>
   );
 }
+

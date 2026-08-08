@@ -53,11 +53,20 @@ export function Journey() {
   return (
     <section id="journey" className="border-b border-border py-24">
       <div className="mx-auto max-w-5xl px-6">
-        <h2 className="label-caps mb-16 text-muted-foreground">Chronology of Impact</h2>
+        <div className="mb-16 flex items-end gap-8">
+          <h2 className="label-caps text-muted-foreground">Chronology of Impact</h2>
+          <div className="mb-1.5 h-px flex-1 rule-gold" />
+        </div>
         <div className="divide-y divide-border border-t border-b border-border">
-          {ROLES.map((role) => (
-            <div key={role.period} className="grid gap-4 py-8 md:grid-cols-12">
-              <div className="text-sm text-muted-foreground md:col-span-3">{role.period}</div>
+          {ROLES.map((role, i) => (
+            <div
+              key={role.period}
+              className="group grid gap-4 py-8 transition-colors hover:bg-muted/40 md:grid-cols-12"
+            >
+              <div className="md:col-span-3">
+                <span className="index-num block">{String(i + 1).padStart(2, "0")}</span>
+                <span className="mt-1 block text-sm text-muted-foreground">{role.period}</span>
+              </div>
               <div className="md:col-span-6">
                 <h3 className="text-xl font-medium">{role.title}</h3>
                 <p className="mt-1 text-sm text-muted-foreground">{role.company}</p>
@@ -66,13 +75,14 @@ export function Journey() {
                 </p>
               </div>
               <div className="md:col-span-3 md:text-right">
-                <span className="rounded bg-muted px-2 py-1 text-[10px] font-medium tracking-wide">
+                <span className="rounded bg-muted px-2 py-1 text-[10px] font-medium tracking-wide transition-colors group-hover:bg-gold/15 group-hover:text-gold">
                   {role.tag}
                 </span>
               </div>
             </div>
           ))}
         </div>
+
         <p className="mt-10 text-sm text-muted-foreground">
           B.A. Journalism &amp; Mass Communication, NIMS University, Jaipur — 2018–2021.
         </p>
