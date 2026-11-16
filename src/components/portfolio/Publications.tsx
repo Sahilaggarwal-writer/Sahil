@@ -1,3 +1,5 @@
+import { Link } from "@tanstack/react-router";
+
 const ARTICLES = [
   {
     outlet: "Forbes",
@@ -60,6 +62,12 @@ export function Publications() {
         </div>
 
         <div className="mt-20 border-t border-border pt-8">
+          <Link
+            to="/writing"
+            className="mb-10 inline-flex items-center gap-3 font-serif text-2xl italic transition-colors hover:text-gold"
+          >
+            View the full writing archive →
+          </Link>
           <p className="label-caps mb-4 text-muted-foreground">Client Portfolio Work</p>
           <ul className="flex flex-wrap gap-x-8 gap-y-2 text-sm text-foreground/70">
             {CLIENTS.map((client) => (

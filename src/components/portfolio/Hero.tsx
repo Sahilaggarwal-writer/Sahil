@@ -10,6 +10,37 @@ export function Hero() {
         className="pointer-events-none absolute -top-24 -right-32 hidden size-[28rem] rounded-full opacity-[0.07] blur-2xl md:block"
         style={{ background: "radial-gradient(circle, var(--color-gold), transparent 65%)" }}
       />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute top-1/2 right-[4%] hidden -translate-y-1/2 lg:block"
+      >
+        <svg viewBox="0 0 320 420" className="h-[26rem] w-auto" fill="none">
+          <path
+            d="M30 360 C 90 330, 120 250, 170 250 S 250 320, 300 290"
+            className="text-gold"
+            stroke="currentColor"
+            strokeWidth="2.5"
+            strokeLinecap="round"
+          />
+          <path
+            d="M40 395 C 120 380, 200 400, 290 385"
+            className="text-gold/40"
+            stroke="currentColor"
+            strokeWidth="1"
+            strokeDasharray="4 6"
+          />
+          <g transform="rotate(-28 200 150)" className="text-foreground">
+            <rect x="188" y="0" width="24" height="170" rx="4" fill="currentColor" />
+            <rect x="186" y="170" width="28" height="14" className="text-gold" fill="currentColor" />
+            <path d="M186 184 L200 250 L214 184 Z" className="text-gold" fill="currentColor" />
+            <line x1="200" y1="200" x2="200" y2="246" className="text-background" stroke="currentColor" strokeWidth="1" />
+            <circle cx="200" cy="198" r="2.5" className="text-background" fill="currentColor" />
+          </g>
+          <text x="40" y="330" className="fill-muted-foreground" fontSize="10" letterSpacing="3">
+            BRAND · NARRATIVE · AUTHORITY
+          </text>
+        </svg>
+      </div>
       <div className="relative mx-auto max-w-5xl px-6">
         <div className="reveal mb-8 flex items-center gap-4">
           <img
