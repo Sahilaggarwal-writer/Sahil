@@ -41,7 +41,7 @@ function PieceList({ heading, items }: { heading: string; items: Piece[] }) {
         <h2 className="label-caps text-muted-foreground">{heading}</h2>
         <div className="mx-8 mb-1.5 h-px flex-1 rule-gold" />
         <span className="text-[10px] tracking-widest uppercase text-muted-foreground">
-          {items.length} entries
+          {items.length} ENTRIES
         </span>
       </div>
       <ol className="divide-y divide-border border-y border-border">
@@ -86,7 +86,7 @@ function WritingPage() {
           ← Back to portfolio
         </Link>
         <h1 className="mt-8 font-serif text-5xl leading-none md:text-7xl">
-          The Writing <span className="font-light italic">Archive</span>
+          My Writings&nbsp;
         </h1>
         <PieceList heading="Blogs & Articles" items={BLOGS} />
         <PieceList heading="Service Pages" items={SERVICE_PAGES} />

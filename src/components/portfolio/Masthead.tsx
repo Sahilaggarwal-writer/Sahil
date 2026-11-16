@@ -20,7 +20,7 @@ export function Masthead() {
             Publications
           </a>
           <a href="/writing" className="transition-colors hover:text-foreground">
-            Writing
+            Portfolio
           </a>
           <a href="/#contact" className="transition-colors hover:text-foreground">
             Contact
