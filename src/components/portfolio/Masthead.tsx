@@ -1,3 +1,5 @@
+import { Link } from "@tanstack/react-router";
+
 export function Masthead() {
   return (
     <header className="border-b border-border">
@@ -19,9 +21,9 @@ export function Masthead() {
           <a href="/#publications" className="transition-colors hover:text-foreground">
             Publications
           </a>
-          <a href="/writing" className="transition-colors hover:text-foreground">
+          <Link to="/" className="transition-colors hover:text-foreground">
             Portfolio
-          </a>
+          </Link>
           <a href="/#contact" className="transition-colors hover:text-foreground">
             Contact
           </a>
