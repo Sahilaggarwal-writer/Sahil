@@ -5,15 +5,70 @@ import { ContactFooter } from "@/components/portfolio/ContactFooter";
 
 type Piece = { title: string; client: string; url?: string };
 
-// Add your pieces here. `url` is optional — leave it out if the page isn't public.
 const BLOGS: Piece[] = [
-  { title: "Your blog title here", client: "The NineHertz" },
-  { title: "Your blog title here", client: "Emizen Tech" },
+  {
+    title: "Custom Software Modernization: Benefits, Process, and Best Practices",
+    client: "The NineHertz",
+    url: "https://theninehertz.com/blog/custom-software-modernization-benefits-process-best-practices",
+  },
+  {
+    title: "15 Top Predictive Maintenance Companies & Solution Providers (2026)",
+    client: "The NineHertz",
+    url: "https://theninehertz.com/blog/top-predictive-maintenance-companies",
+  },
+  {
+    title: "Software Development Cost in California in 2026",
+    client: "The NineHertz",
+    url: "https://theninehertz.com/blog/software-development-cost-in-california-complete-break-down",
+  },
+  {
+    title: "How to Make a Social Media App",
+    client: "The NineHertz",
+    url: "https://theninehertz.com/blog/how-to/build-an-app-like-instagram-cost",
+  },
+  {
+    title: "Ecommerce chatbots: Features, Use Cases, Examples, Costs",
+    client: "The NineHertz",
+    url: "https://theninehertz.com/artificial-intelligence/ecommerce-chatbots",
+  },
 ];
 
 const SERVICE_PAGES: Piece[] = [
-  { title: "Your service page title here", client: "The NineHertz" },
-  { title: "Your service page title here", client: "Emizen Tech" },
+  {
+    title: "AI Development Services",
+    client: "The NineHertz",
+    url: "https://theninehertz.com/artificial-intelligence",
+  },
+  {
+    title: "Generative AI Development Company",
+    client: "The NineHertz",
+    url: "https://theninehertz.com/artificial-intelligence/generative-ai-development-services",
+  },
+  {
+    title: "Workflow Orchestration",
+    client: "The NineHertz",
+    url: "https://theninehertz.com/services/workflow-orchestration",
+  },
+  {
+    title: "AI Consulting Services",
+    client: "The NineHertz",
+    url: "https://theninehertz.com/artificial-intelligence/ai-consulting-services",
+  },
+  {
+    title: "Custom Mobile App Development Company",
+    client: "The NineHertz",
+    url: "https://theninehertz.com/services/custom-mobile-app-development-services",
+  },
+  {
+    title: "Custom Software Development services",
+    client: "The NineHertz",
+    url: "https://theninehertz.com/services/custom-software-development-services",
+  },
+  {
+    title: "IoT App Development Company",
+    client: "The NineHertz",
+    url: "https://theninehertz.com/services/iot-app-development-company",
+  },
 ];
 
 const title = "Writing Archive — Sahil Aggarwal";
